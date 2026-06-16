@@ -2,3 +2,8 @@ from .user import User
 from .complaint import Complaint
 from .driver import Driver
 from .assignment import Assignment
+from .notification import Notification
+from .ai_result import AIResult
+from .hotspot import Hotspot
+from .forecast import Forecast
+from .route import Route

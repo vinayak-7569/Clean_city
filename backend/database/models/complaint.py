@@ -28,6 +28,22 @@ class Complaint(Base):
 
     status = Column(String, default="pending")
 
-    citizen_id = Column(Integer, ForeignKey("users.id"))
+    citizen_id = Column(
+        Integer,
+        ForeignKey("users.id")
+    )
 
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(
+        DateTime,
+        default=datetime.utcnow
+    )
+
+    waste_category = Column(
+        String,
+        default="Mixed Waste"
+    )
+
+    priority = Column(
+        String,
+        default="Medium"
+    )
